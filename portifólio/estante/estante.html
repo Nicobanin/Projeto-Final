@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Estante de Livros</title>
+    <style>
+        html{
+    /* suavização do scroll */
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background */
+    background-color: #f2e7bc;
+    
+    /* texto */
+    color: #0d0d0d;
+    text-align: justify;
+
+    /* alinhamento e tamanho */
+    /* 1rem = 16px, tela grande = font-size: 16px, tela media = font-size: 15px, tela pequena = font-size: 14px */
+
+    margin: auto;
+}
+
+/* seções do livro */
+section {
+    /* espaçamento dentro da seção */
+    padding: 64px 256px;
+}
+
+/* tabela */
+table{
+    /* largura */
+    width: 100%;
+}
+td{
+    /* background */
+    background-color: #a9d9d0;
+}
+tr {
+    /* background */
+    background-color: #038c7f;
+}
+td, th{
+    /* borda no formato shorthand */
+    border: black solid 1px;
+    border-radius: 4px;
+    /* alhinhamento do texto */
+    text-align: center;
+}
+
+/* titulo texto e paragrafos */
+
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+h3 {
+    color: black;
+}
+
+/* links */
+a:link{
+    color: #f2e7dc; /* link normal */
+}
+a:visited {
+    color: #95bfe8; /* link visitado */
+}
+a:hover {
+    color: #025454; /* mouse sobre o link */
+}
+a:active {
+    color: #0d0d0d; /* link visitado */
+}
+
+/* imagem */
+img{
+    width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+
+/* classes e ids */
+.bookTittle{
+    background-color: #a9d9d0;
+    color: #027373;
+    text-align: center;
+}
+
+#sectionHP, #sectionRenata, #sectionSauropods{
+    background-color: #a9d9d0;
+}
+#header{
+    background-color: #038c7f;
+    color: #f2e7dc;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+#yourLibrary{
+    text-indent: 0px;
+    text-align: center;
+}
+#sumary{
+    background-color: #038c7f;
+    color: #f2e7dc;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 0 0 50px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* roda pé */
+footer{
+    background-color: #038c7f;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-size: large;
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Estante de livros</h1>
+        <p id="yourLibrary">A sua biblioteca a curta distância</p>
+    </div>
+    <div id="sumary">
+        <h2>Sumário:</h2>
+        <ol>
+            <li><a href="#sectionHP"> Harry Potter e a Pedra Filosofal</a></li>
+            <li><a href="#sectionDarwin"> Darwin sem Frescura <br> Como a ciência evolutiva ajuda a explicar algumas polêmicas da atualidade</a></li>
+            <li><a href="#sectionRenata"> Boias, araias e salva-vidas, de Renata Ruffo</a></li>
+            <li><a href="#sectionBoo"> O Fantasma da Ópera</a></li>
+            <li><a href="#sectionSauropods"> The Sauropods Evolution and Paleobiology
+            </a></li>
+        </ol>
+    </div>
+    <section id="sectionHP">
+        <h2 class="bookTitle">Harry Potter e a Pedra Filosofal</h2>
+        <img src="https://m.media-amazon.com/images/I/81ibfYk4qmL.jpg" alt="Capa do livro harry potter">
+        <h3>Sinopse</h3>
+        <p>Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. No dia de seu aniversário de 11 anos, Harry descobre sua verdadeira história e seu destino: ser um aprendiz de feiticeiro até o dia em que terá que enfrentar a pior força do mal, o homem que assassinou seus pais. Potter fica sabendo que é a única pessoa a ter sobrevivido a um ataque do tal bruxo do mal e essa é a causa da marca em forma de raio que ele carrega na testa. Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer; ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais.</p>
+        <p>Fonte: Google Books</p>
+        <table>
+            <thead>
+                <th>Data</th>
+                <th>Autor</th>
+                <th>Idioma Original</th>
+                <th>Gêneros</th>
+                <th>Número de páginas</th>
+                <th>Editora</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8 de dezembro de 2015</td>
+                    <td>J.K. Rowling</td>
+                    <td>Inglês</td>
+                    <td>Romance, Literatura infantil, Literatura fantástica, Alta fantasia</td>
+                    <td>223</td>
+                    <td>Pottermore Publishing</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="sectionDarwin">
+        <h2 class="bookTitle">Darwin sem frescura <br> Como a ciência evolutiva ajuda a explicar algumas polêmicas da atualidade</h2>
+        <img src="https://photos.enjoei.com.br/darwin-sem-frescura/1200xN/czM6Ly9waG90b3MuZW5qb2VpLmNvbS5ici9wcm9kdWN0cy8xMzM4NjQwOC9jYzlkODBkYmVmNWM3MDZkMmQxMjU2Yzc1ZGRlN2QyMy5qcGc" alt="Capa do livro harry potter">
+        <h3>Sinopse</h3>
+        <p>Em uma viagem por Eras, continentes, nascimentos e extinções, dois brasucas nerds nos convidam a um mergulho na teoria da Evolução com as mais modernas e variadas descobertas científicas já feitas na história.
+            Com a leveza e descontração de que só quem entende do assunto é capaz, os autores Reinaldo e Pirula respondem questões das mais diversas que, de algum modo, se relacionam à teoria mais importante da biologia.
+            Afinal, existe um elo perdido? De onde veio a nossa espécie? A humanidade está em processo de extinção? Por que irlandeses têm mais tolerância à lactose do que chineses? Por que leões matam filhotinhos? Como a Evolução explica a existência da homossexualidade? E o mais importante: sou fresco por não gostar de brócolis?</p>
+        <p>Fonte: Google Books</p>
+        <table>
+            <thead>
+                <th>Data</th>
+                <th>Autor</th>
+                <th>Idioma Original</th>
+                <th>Gêneros</th>
+                <th>Número de páginas</th>
+                <th>Editora</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>18 de março de 2019</td>
+                    <td>Pirula, Reinaldo José Lopes</td>
+                    <td>Português</td>
+                    <td>Ciências, Humor</td>
+                    <td>256</td>
+                    <td>HarperCollins Brasil</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="sectionRenata">
+        <h2 class="bookTitle">Boias, raias e salva-vidas, de Renata Ruffo</h2>
+        <img src="https://img.skoob.com.br/_fLw71o2xVKejne_AEv6mq2rJiI=/600x0/center/top/filters:format(jpeg)/https://skoob.s3.amazonaws.com/livros/11648260/BOIASN_RAIAS_E_SALVAVIDAS_160150463711648260SK1601504638B.jpg" alt="Capa do livro harry potter">
+        <h3>Sinopse</h3>
+        <p>"Boias, raias e salva-vidas" são poesias fruto dos caminhos trilhados na tentativa de encontrar o eu em meio a tantos nós. Ao escrever sobre (des)amores por entre todos os ângulos — os latentes, os enviesados e os tão profundos que quase escapam —, Renata mostra o poder que as palavras têm para tornar apreensíveis mesmo os sentimentos mais árduos e ambivalentes.
+           <br> Esse livro é, por isso, um peito aberto com um genuíno convite para que você o sinta completamente.</p>
+        <p>Fonte: skoob</p>
+        <table>
+            <thead>
+                <th>Data</th>
+                <th>Autor</th>
+                <th>Idioma Original</th>
+                <th>Gêneros</th>
+                <th>Número de páginas</th>
+                <th>Editora</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2020</td>
+                    <td>Renata Ruffo</td>
+                    <td>Português</td>
+                    <td>Poemas, poesias</td>
+                    <td>98</td>
+                    <td>Patuá</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="sectionBoo">
+        <h2 class="bookTitle">O Fantasma da Ópera</h2>
+        <img src="https://tocalivros.s3.amazonaws.com/images/audiolivros/200/o/-/o-fantasma-da-opera-gaston-leroux-1060596.jpg" alt="Capa do livro harry potter">
+        <h3>Sinopse</h3>
+        <p>Que mistério se esconde nos subterrâneos do Teatro da Ópera de Paris? Quem é o ser tenebroso com um dom celestial?
+
+            Intrigas e assassinatos permeiam esta história de suspense, terror e amor que se tornou um clássico da literatura, lido e apreciado há mais de cem anos. O Fantasma da Ópera é, indiscutivelmente, um gótico de qualidade!</p>
+        <p>Fonte: Google Books</p>
+        <table>
+            <thead>
+                <th>Data</th>
+                <th>Autor</th>
+                <th>Idioma Original</th>
+                <th>Gêneros</th>
+                <th>Número de páginas</th>
+                <th>Editora</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>23 de setembro de 1909</td>
+                    <td>Gaston Leroux</td>
+                    <td>Francês</td>
+                    <td>Romance, Terror, Ficção gótica, Romance policial histórico</td>
+                    <td>168</td>
+                    <td>Editora Melhoramentos</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="sectionSauropods">
+        <h2 class="bookTitle">The Sauropods
+            Evolution and Paleobiology</h2>
+        <img src="https://m.media-amazon.com/images/I/71BsknfeufL.jpg" alt="Capa do livro harry potter">
+        <h3>Sinopse</h3>
+        <p>Sauropod dinosaurs were the largest animals ever to walk the earth, and they represent a substantial portion of vertebrate biomass and biodiversity during the Mesozoic Era. The story of sauropod evolution is told in an extensive fossil record of skeletons and footprints that span the globe and 150 million years of earth history. This generously illustrated volume is the first comprehensive scientific summary of sauropod evolution and paleobiology. The contributors explore sauropod anatomy, detail its variations, and question the myth that life at large size led to evolutionary stagnation and eventual replacement by more "advanced" herbivorous dinosaurs. Chapters address topics such as the evolutionary history and diversity of sauropods; methods for creating three-dimensional reconstructions of their skeletons; questions of sauropod herbivory, tracks, gigantism, locomotion, reproduction, growth rates, and more. This book, together with the recent surge in sauropod discoveries around the world and taxonomic revisions of fragmentary genera, will shed new light on "nature's greatest extravagances."</p>
+        <p>Fonte: Google Books</p>
+        <table>
+            <thead>
+                <th>Data</th>
+                <th>Autor</th>
+                <th>Idioma Original</th>
+                <th>Gêneros</th>
+                <th>Número de páginas</th>
+                <th>Editora</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>16 de dezembro de 2005</td>
+                    <td>Kristina Curry Rogers, Jeffrey Wilson</td>
+                    <td>Inglês</td>
+                    <td>Anais</td>
+                    <td>349</td>
+                    <td>University of California Press</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <a href="#header">Voltar para o topo</a>
+    </footer>
+</body>
+</html>
